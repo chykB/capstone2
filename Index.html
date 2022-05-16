@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <!-- <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <header>
+        <div class="logo">SideHustle.</div>
+        <div class="hamburger">
+           <div class="line"></div>                                                                   
+           <div class="line"></div>                                                                   
+           <div class="line"></div>                                                                   
+           <div class="line"></div>                                                                   
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+<script src="index.js">
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-links");
+        navBar.classlist.toogle("active");
+    }
+</script>
+</body>
+</html>
